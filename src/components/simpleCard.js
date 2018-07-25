@@ -10,13 +10,19 @@ import Grid from '@material-ui/core/Grid';
 const styles = {
     root: {
         alignItem: 'center',
+        flexGrow: 1,
+        position: 'relative',
+        padding: 25,
+
     },
     card: {
-        width: '25%',
-        margin: 20,
+        width: '28%',
         float: 'left',
         position: 'static',
+        marginRight: '2.6%',
+        marginLeft: '2.6%',
     },
+
     bullet: {
         display: 'inline-block',
         margin: '0 2px',

@@ -7,6 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import ProfessionalPic from '../img/ProfessionalPic.jpg';
 import Grid from '@material-ui/core/Grid';
+import Carsel from './carousel.js';
 
 const styles = () => ({
     palette: {
@@ -14,9 +15,9 @@ const styles = () => ({
     },
     root: {
         flexGrow: 1,
-        margin: 20,
+        margin: '2.6%',
         position: 'relative',
-        padding: 35,
+        padding: 25,
     },
     card: {
         margin: 6,
@@ -69,6 +70,8 @@ function MediaCard(props) {
                     </Typography>
                 </CardContent>
             </div>
+
+           <Carsel />
         </Grid>
 
         <Grid item xs={2}>

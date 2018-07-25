@@ -4,22 +4,32 @@ import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
+import GitHub from '../img/GitHub.png';
+import LinkedIn from '../img/LinkedIn.png';
+
 
 const Links ={
     src:[
     'https://www.linkedin.com/in/pierce-morrill/',
-    'https://github.com/PierceMor'
+    'https://github.com/PierceMor',
 ]
 }
 
 const styles ={
+    palette: {
+        type: 'dark',
+    },
     root : {
+        zIndex: 1,
         textAlign: 'center',
         position: 'sticky',
         width: '100%',
-        color: 'primary',
         bottom: 0,
     },  
+    button : {
+        width: '100%',
+        backGroundColor: 'blue',
+    },
     list : {
         width: 250,
     },
@@ -53,40 +63,7 @@ class Footer extends React.Component {
         return (
             <div className={classes.root} >
 
-                <Button onClick={this.toggleDrawer('bottom',true)}>Message Me Cat Pictures!</Button>
-
-                <Drawer open={this.state.left} onClose={this.toggleDrawer('left',false)}>
-                    <div
-                    tabIndex={0}
-                    role="button"
-                    onClick={this.toggleDrawer('left',false)}
-                    onKeyDown={this.toggleDrawer('left',false)}
-                    >
-                       {sideList}
-                    </div>
-                </Drawer>
-
-                <Drawer anchor='top' open={this.state.top} onClose={this.toggleDrawer('top',false)}>
-                    <div
-                    tabIndex={0}
-                    role="button"
-                    onClick={this.toggleDrawer('top',false)}
-                    onKeyDown={this.toggleDrawer('top',false)}
-                    >
-                       {sideList}
-                    </div>
-                </Drawer>
-
-                <Drawer anchor='top' open={this.state.top} onClose={this.toggleDrawer('top',false)}>
-                    <div
-                    tabIndex={0}
-                    role="button"
-                    onClick={this.toggleDrawer('top',false)}
-                    onKeyDown={this.toggleDrawer('top',false)}
-                    >
-                       {sideList}
-                    </div>
-                </Drawer>
+                <Button className={classes.button} onClick={this.toggleDrawer('bottom',true)}>Message Me Cat Pictures!</Button>
 
                 <Drawer anchor='bottom' open={this.state.bottom} onClose={this.toggleDrawer('bottom',false)}>
                     <div
@@ -95,18 +72,8 @@ class Footer extends React.Component {
                     onClick={this.toggleDrawer('bottom',false)}
                     onKeyDown={this.toggleDrawer('bottom',false)}
                     >
-                       {sideList}
-                    </div>
-                </Drawer>
-
-                <Drawer anchor='right' open={this.state.right} onClose={this.toggleDrawer('right',false)}>
-                    <div
-                    tabIndex={0}
-                    role="button"
-                    onClick={this.toggleDrawer('right',false)}
-                    onKeyDown={this.toggleDrawer('right',false)}
-                    >
-                       {sideList}
+                        <Button className={classes.button} >
+                        </Button>
                     </div>
                 </Drawer>
 

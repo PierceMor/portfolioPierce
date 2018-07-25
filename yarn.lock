@@ -1939,6 +1939,24 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
+d3-color@1:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-1.2.0.tgz#d1ea19db5859c86854586276ec892cf93148459a"
+
+d3-ease@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/d3-ease/-/d3-ease-1.0.3.tgz#68bfbc349338a380c44d8acc4fbc3304aa2d8c0e"
+
+d3-interpolate@^1.1.6:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/d3-interpolate/-/d3-interpolate-1.2.0.tgz#40d81bd8e959ff021c5ea7545bc79b8d22331c41"
+  dependencies:
+    d3-color "1"
+
+d3-timer@^1.0.4:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/d3-timer/-/d3-timer-1.0.7.tgz#df9650ca587f6c96607ff4e60cc38229e8dd8531"
+
 d@1:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/d/-/d-1.0.0.tgz#754bb5bfe55451da69a58b94d45f4c5b0462d58f"
@@ -2607,6 +2625,10 @@ execa@^0.7.0:
     p-finally "^1.0.0"
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
+
+exenv@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
 
 expand-brackets@^0.1.4:
   version "0.1.5"
@@ -4544,6 +4566,20 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+material-auto-rotating-carousel@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/material-auto-rotating-carousel/-/material-auto-rotating-carousel-2.0.0.tgz#52bc4e46edfb30f40c2f2639b650ee74595fa5b6"
+  dependencies:
+    classnames "^2.2.5"
+    material-ui-dots "^2.0.0"
+    prop-types "^15.5.8"
+
+material-ui-dots@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/material-ui-dots/-/material-ui-dots-2.0.0.tgz#abba82dec58bc8e779ebea25591329c8bbb80a81"
+  dependencies:
+    prop-types "^15.5.10"
+
 math-expression-evaluator@^1.2.14:
   version "1.2.17"
   resolved "https://registry.yarnpkg.com/math-expression-evaluator/-/math-expression-evaluator-1.2.17.tgz#de819fdbcd84dccd8fae59c6aeb79615b9d266ac"
@@ -4942,6 +4978,15 @@ nth-check@~1.0.1:
   resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-1.0.1.tgz#9929acdf628fc2c41098deab82ac580cf149aae4"
   dependencies:
     boolbase "~1.0.0"
+
+nuka-carousel@^4.3.5:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/nuka-carousel/-/nuka-carousel-4.3.5.tgz#a2b61f6a886277200e0b12e6842f3208ae6e01c9"
+  dependencies:
+    d3-ease "^1.0.3"
+    exenv "^1.2.0"
+    prop-types "^15.6.0"
+    react-move "^2.7.0"
 
 num2fraction@^1.2.2:
   version "1.2.2"
@@ -5844,6 +5889,13 @@ react-jss@^8.1.0:
 react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
+
+react-move@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/react-move/-/react-move-2.7.0.tgz#8f5b3d37cc614b9de90e1e2744c80a1e3ff2fcfd"
+  dependencies:
+    d3-interpolate "^1.1.6"
+    d3-timer "^1.0.4"
 
 react-router-dom@^4.3.1:
   version "4.3.1"
