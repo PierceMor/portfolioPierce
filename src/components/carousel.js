@@ -75,13 +75,13 @@ class Carsel extends React.Component {
                     nextButton={
                         <Button size='small' onClick={this.handleNext} disabled={activeStep === maxSteps -1}>
                             Next 
-                            {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
+                            {/* {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />} */}
                         </Button>
                     }
                     backButton={
                         <Button size='small' onClick={this.handleBack} disabled={activeStep === 0}>
                             Next 
-                            {theme.direction === 'rtl' ?  <KeyboardArrowRight /> : <KeyboardArrowLeft /> }
+                            {/* {theme.direction === 'rtl' ?  <KeyboardArrowRight /> : <KeyboardArrowLeft /> } */}
                         </Button>
                     }
                 />
