@@ -19,10 +19,14 @@ const styles = {
         width: '28%',
         float: 'left',
         position: 'static',
+        textAlign: 'center',
         marginRight: '2.6%',
         marginLeft: '2.6%',
+        height: 350,
     },
-
+    h2: {
+        underLine: 'solid'
+    },
     bullet: {
         display: 'inline-block',
         margin: '0 2px',
@@ -43,59 +47,100 @@ function SimpleCard(props){
     return (
         <div>
             <Grid className={classes.root} spacing={12}>
+
                 <Card className={classes.card}>
                     <CardContent>
 
-                        <Typography className={classes.title} color="textsecondary">
-                            Word of the day
-                        </Typography>
-
                         <Typography variant='headline' component='h2' >
-                            Skills
+                            Services
                         </Typography>
 
-                        <Typography className={classes.pos} color='textSecondary' >
-                        All of the words in Lorem Ipsum have flirted with me - consciously or unconsciously. That's to be expected. Some people have an ability to write placeholder text... It's an art you're basically born with. You either have it or you don't. An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.
+                        <Typography className={classes.pos} color='textPrimary' >
+                            - Front-end Developer -
+                            <br /> I enjoy coding things from scratch, making Ideas jump and grab your attention 
+                            <br /><br />
+
+                            - German Translator -
+                            <br /> I love the challenge and pure joy your get from connecting two different cultural worlds
+                            <br /><br />
+
+                            - Animal Services - 
+                            <br /> We have fostered dozens of different Dogs and Cats over the years, so if you need a pet, I am your connection
                         </Typography>
 
                     </CardContent>
                 </Card> 
 
+
                 <Card className={classes.card}>
                     <CardContent>
 
-                        <Typography className={classes.title} color="textsecondary">
-                            Word of the day
-                        </Typography>
-
                         <Typography variant='headline' component='h2' >
-                            Skills
+                            Passions
+                            
                         </Typography>
 
-                        <Typography className={classes.pos} color='textSecondary' >
-                        All of the words in Lorem Ipsum have flirted with me - consciously or unconsciously. That's to be expected. Some people have an ability to write placeholder text... It's an art you're basically born with. You either have it or you don't. An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.
+                        <Typography className={classes.title} color='textPrimary' >
+                           - Development -
+                            <br/>   I have just started my Journay as a Full Stack Developer
+                            <br/><br/>
+                            - Brazilian Jiu Jitsu -
+                            <br/>   I have been training for about 4 years nows
+                            <br/><br/>
+                            - Video Games -
+                            <br/>   Gaming has always been a part of my life, ever since playing Starcraft as a Kid
+                            <br/><br/>
+                            - Linguistics -
+                            <br/>   Languages have always fascinated me with how they define our way of thinking 
+                            <br/><br/>
                         </Typography>
 
                     </CardContent>
                 </Card> 
 
+
                 <Card className={classes.card}>
                     <CardContent>
-
-                        <Typography className={classes.title} color="textsecondary">
-                            Word of the day
-                        </Typography>
 
                         <Typography variant='headline' component='h2' >
                             Skills
                         </Typography>
 
-                        <Typography className={classes.pos} color='textSecondary' >
-                        All of the words in Lorem Ipsum have flirted with me - consciously or unconsciously. That's to be expected. Some people have an ability to write placeholder text... It's an art you're basically born with. You either have it or you don't. An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.
+                        <Typography className={classes.title} color='textPrimary' >
+                        React.JS
+                        <br/>
+                        Angular.JS
+                        <br/>
+                        Express
+                        <br/>
+                        Javascript/Jquery
+                        <br/>
+                        MySQL
+                        <br/>
+                        Sequelize
+                        <br/>
+                        MongoDB
+                        <br/>
+                        Deployment (Git)
+                        <br/>
+                        CSS
+                        <br/>
+                        HTML
+                        <br/>
+                        Node.js
+                        <br/>
+                        Customer Relations
+                        <br/>
+                        German Language
+
                         </Typography>
 
                     </CardContent>
                 </Card> 
+
+
+
+
 
             </Grid>
         </div> 
