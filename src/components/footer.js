@@ -3,17 +3,9 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List';
-import GitHub from '../img/GitHub.png';
 import LinkedIn from '../img/LinkedIn.png';
-
-
-const Links ={
-    src:[
-    'https://www.linkedin.com/in/pierce-morrill/',
-    'https://github.com/PierceMor',
-]
-}
+import GitHub from '../img/GitHub.png';
+import gmail from '../img/gmail.png';
 
 const styles ={
     palette: {
@@ -35,7 +27,29 @@ const styles ={
     },
     fullList: {
         width: 'auto',
+    },    
+    menuButton: {
+        marginLeft: 20,
+        marginRight: 20,
+        underLine: 'none',
+        color: 'grey',
+        itemAlign: 'center',
+
     },
+    Drawer: {
+        height: 90,
+        itemAlign: 'center',
+        marginLeft: 20,
+        marginRight: 20,
+    },
+    img: {
+        height: 50,
+        widht: 50,
+        margin: 20,
+        marginLeft: 60,
+        marginRight: 60,
+        float: 'center'
+    }
 };
 
 class Footer extends React.Component {
@@ -53,27 +67,31 @@ class Footer extends React.Component {
     render() {
         const { classes } = this.props;
 
-        const sideList = (
-            <div className={classes.fullList}>
-                <List>{Links.src }</List>
-                
-            </div>
-        );//sideList
-
         return (
             <div className={classes.root} >
 
                 <Button className={classes.button} onClick={this.toggleDrawer('bottom',true)}>Message Me Cat Pictures!</Button>
 
-                <Drawer anchor='bottom' open={this.state.bottom} onClose={this.toggleDrawer('bottom',false)}>
+                <Drawer anchor='bottom' className={classes.Drawer} open={this.state.bottom} onClose={this.toggleDrawer('bottom',false)}>
                     <div
                     tabIndex={0}
                     role="button"
                     onClick={this.toggleDrawer('bottom',false)}
                     onKeyDown={this.toggleDrawer('bottom',false)}
                     >
-                        <Button className={classes.button} >
-                        </Button>
+                
+                        <a href="https://github.com/PierceMor" style={{ marginRight:'15%', float:'right' }} >
+                            <img src={GitHub} className={classes.img} />
+                        </a>
+
+                        <a href="mailto:piercemorrill91@gmail.com" style={{ marginRight: '15%',float:  'right' }}>
+                            <img src={gmail} className={classes.img} />
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/pierce-morrill/" style={{ marginRight: '15%',float:  'right' }}>
+                            <img src={LinkedIn} className={classes.img} />
+                        </a>
+                        
                     </div>
                 </Drawer>
 

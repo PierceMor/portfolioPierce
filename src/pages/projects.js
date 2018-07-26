@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
-import ListSubheader from '@material-ui/core/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import staffD from '../img/staffD2.JPG';
@@ -13,7 +12,6 @@ import baby from '../img/baby.JPG';
 import animal from '../img/animal.JPG';
 import endGame from "../img/endGame.JPG";
 import woofle from "../img/woofle.JPG";
-
 
 const styles = theme => ({
     root: {
@@ -111,6 +109,8 @@ function Projects(props){
                                     <a href={tile.GitHub}>
                                         <InfoIcon />
                                     </a>
+                            
+                                 
                                 </IconButton>
                             }
                         />

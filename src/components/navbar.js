@@ -7,6 +7,9 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { NavLink } from "react-router-dom";
+import IconButton from '@material-ui/core/IconButton';
+import GitHub from '../img/GitHub.png';
+import LinkedIn from '../img/LinkedIn.png';
 
 const styles = {
     root: {
@@ -25,18 +28,30 @@ const styles = {
     menuButton: {
         marginLeft: 20,
         marginRight: 20,
-        color: 'white',
         underLine: 'none',
-        color: '#718DA5 !important',
+        color: 'grey',
+    },
+    buttons:{
+
     }
 };//styles
+
+
+const Links = [
+
+    {
+        src: 'https://github.com/PierceMor',
+        img: GitHub,
+    },
+]
+
 
 function Navbar(props) {
     
 
     const { classes } = props;
     return (
-        <Grid className={classes.root} spacing={12}>
+        <Grid className={classes.root}>
                 
             <Grid item xs={4}>
             </Grid>
@@ -45,19 +60,17 @@ function Navbar(props) {
                 <AppBar position="static">
                     <Toolbar>
 
-                        
-                        <Button  className={classes.menuButton} className={window.location.pathname === "/" ? "active nav-link" : "nav-link"}>
-                            <NavLink to='/'>
-                                    Pierce Morrill
-                            </NavLink>
-                        </Button>
+                        <NavLink to='/'>
+                            <Button  className={classes.menuButton} className={window.location.pathname === "/" ? "active nav-link" : "nav-link"}>
+                                        Pierce Morrill
+                            </Button>
+                        </NavLink>
 
                         <Typography variant="title" color="inherit" className={classes.flex}>
                         </Typography>
 
                         <NavLink to='/Projects'>
                             <Button className={classes.menuButton} className={window.location.pathname === "/Projects" ? "active nav-link" : "nav-link"}>
-                                
                                 Projects
                             </Button>
                         </NavLink>

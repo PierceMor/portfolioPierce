@@ -8,7 +8,7 @@ class Home extends Component {
 render (){
 
     return (
-        <div backgroundColor= 'grey' >
+        <div >
             <MediaCard />
             <SimpleCard />
         </div>
