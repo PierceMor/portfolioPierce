@@ -66,7 +66,7 @@ function MediaCard(props) {
                     </Typography>
                     
                     <Typography variant="subheading"     color="textSecondary">
-                        My name is Pierce Morrill, I a refugee from Dallas trying to make a life for myself in the great land of Austin. My Academic career was focused primarily on Anthropology, Linguistics, and German Studies. After School I began to look for something more meaningful and I became a bit stranded just waiting tables for a while. I came to Austin last year to work as a translator for a gaming company. 
+                        My name is Pierce Morrill, hailing from the Glorious land of the DFW to conquer this beautiful Ausstin country. My Academic career was focused primarily on Anthropology, Linguistics, and German Studies. After School I began to look for something more meaningful and I became a bit stranded just waiting tables for a while. I came to Austin last year to work as a translator for a gaming company. 
                     </Typography>
                 </CardContent>
             </div>
