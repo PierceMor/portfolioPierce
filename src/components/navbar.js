@@ -5,9 +5,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import Grid from '@material-ui/core/Grid';
+import { NavLink } from "react-router-dom";
 
 const styles = {
     root: {
@@ -17,13 +16,18 @@ const styles = {
         position: 'sticky',
         top: 0,
         marginBottom: 3,
+        color: 'inherit',
+        textDecoration: 'inherit',
     },
     flex: {
         flexGrow: 1,
     },
     menuButton: {
-        marginLeft: 12,
+        marginLeft: 20,
         marginRight: 20,
+        color: 'white',
+        underLine: 'none',
+        color: '#718DA5 !important',
     }
 };//styles
 
@@ -41,14 +45,22 @@ function Navbar(props) {
                 <AppBar position="static">
                     <Toolbar>
 
-                        <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-                            <MenuIcon />
-                        </IconButton>
+                        
+                        <Button  className={classes.menuButton} className={window.location.pathname === "/" ? "active nav-link" : "nav-link"}>
+                            <NavLink to='/'>
+                                    Pierce Morrill
+                            </NavLink>
+                        </Button>
 
                         <Typography variant="title" color="inherit" className={classes.flex}>
                         </Typography>
 
-                        <Button color="inherit">Projects</Button>
+                        <NavLink to='/Projects'>
+                            <Button className={classes.menuButton} className={window.location.pathname === "/Projects" ? "active nav-link" : "nav-link"}>
+                                
+                                Projects
+                            </Button>
+                        </NavLink>
                         
                     </Toolbar> 
                 </AppBar>

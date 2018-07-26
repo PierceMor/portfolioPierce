@@ -18,6 +18,7 @@ const styles = () => ({
         margin: '2.6%',
         position: 'relative',
         padding: 25,
+        
     },
     card: {
         margin: 6,

@@ -4,7 +4,7 @@ import Navbar from "./components/navbar.js";
 import Footer from "./components/footer.js";
 import Home  from "./pages/home.js";
 // import Contact from "./pages/contact.js";
-import Project from "./pages/portfolio.js";
+import Projects from "./pages/projects.js";
 // import Funstuff from "./pages/funStuff.js";
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
             <Navbar />
             <Route exact path="/" component={Home} />
             {/* <Route exact path="/contact" component={Contact} /> */}
-            <Route exact path="/Project" component={Project} />
+            <Route exact path="/Projects" component={Projects} />
             {/* <Route exact path="/funstuff" component={Funstuff} /> */}
           </div>
           <Footer />
