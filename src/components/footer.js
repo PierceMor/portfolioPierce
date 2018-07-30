@@ -81,15 +81,15 @@ class Footer extends React.Component {
                     >
                 
                         <a href="https://github.com/PierceMor" style={{ marginRight:'15%', float:'right' }} >
-                            <img src={GitHub} className={classes.img} />
+                            <img src={GitHub} alt='Github Link'  className={classes.img} />
                         </a>
 
                         <a href="mailto:piercemorrill91@gmail.com" style={{ marginRight: '15%',float:  'right' }}>
-                            <img src={gmail} className={classes.img} />
+                            <img src={gmail} alt='Gmail Link' className={classes.img} />
                         </a>
 
                         <a href="https://www.linkedin.com/in/pierce-morrill/" style={{ marginRight: '15%',float:  'right' }}>
-                            <img src={LinkedIn} className={classes.img} />
+                            <img src={LinkedIn} alt='Linkedin' className={classes.img} />
                         </a>
                         
                     </div>

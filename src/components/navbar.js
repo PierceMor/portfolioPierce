@@ -7,9 +7,6 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { NavLink } from "react-router-dom";
-import IconButton from '@material-ui/core/IconButton';
-import GitHub from '../img/GitHub.png';
-import LinkedIn from '../img/LinkedIn.png';
 
 const styles = {
     root: {
@@ -31,23 +28,10 @@ const styles = {
         underLine: 'none',
         color: 'grey',
     },
-    buttons:{
 
-    }
 };//styles
 
-
-const Links = [
-
-    {
-        src: 'https://github.com/PierceMor',
-        img: GitHub,
-    },
-]
-
-
 function Navbar(props) {
-    
 
     const { classes } = props;
     return (
@@ -87,7 +71,7 @@ function Navbar(props) {
 }//Navbar
 
 Navbar.propTypes= {
-    classes: PropTypes.object.isRequierd,
+    classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(Navbar);
