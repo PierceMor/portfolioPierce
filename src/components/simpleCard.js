@@ -46,7 +46,7 @@ function SimpleCard(props){
 
     return (
         <div>
-            <Grid className={classes.root} spacing={12}>
+            <Grid className={classes.root}>
 
                 <Card className={classes.card}>
                     <CardContent>
@@ -55,7 +55,7 @@ function SimpleCard(props){
                             Services
                         </Typography>
 
-                        <Typography className={classes.pos} color='textPrimary' >
+                        <Typography className={classes.pos}  >
                             - Front-end Developer -
                             <br /> I enjoy coding things from scratch, making Ideas jump and grab your attention 
                             <br /><br />
@@ -80,7 +80,7 @@ function SimpleCard(props){
                             
                         </Typography>
 
-                        <Typography className={classes.title} color='textPrimary' >
+                        <Typography className={classes.title}  >
                            - Development -
                             <br/>   I have just started my Journay as a Full Stack Developer
                             <br/><br/>
@@ -106,7 +106,7 @@ function SimpleCard(props){
                             Skills
                         </Typography>
 
-                        <Typography className={classes.title} color='textPrimary' >
+                        <Typography className={classes.title}  >
                         React.JS
                         <br/>
                         Angular.JS

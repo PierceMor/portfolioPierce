@@ -5,9 +5,8 @@ import MobileStepper from '@material-ui/core/MobileStepper';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
-import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
-import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
 const testimonials= [
     {
@@ -54,9 +53,10 @@ class Carsel extends React.Component {
         activeStep: 0,
     };
 
+
     handleNext = () => {
         this.setState(prevState => ({
-            activeStep: prevState.activeStep -1
+            activeStep: prevState.activeStep + 1
         }));
     };
 
@@ -68,13 +68,13 @@ class Carsel extends React.Component {
       };
 
     render(){
-        const {classes, theme} = this.props;
-        const { activeStep } =this.state;
-
+        const { classes } = this.props;
+        const { activeStep } = this.state;
         const maxSteps = testimonials.length;
 
         return (
-            <div className= { classes.root }>
+
+        <div className= { classes.root }>
 
                 <Paper square elevation={0} className={classes.header}>
                     <Typography> {testimonials[activeStep].text}  < br/> {testimonials[activeStep].author} </Typography>
@@ -86,20 +86,18 @@ class Carsel extends React.Component {
                     activeStep={activeStep}
                     className={classes.MobileStepper}
                     nextButton={
-                        <Button disabled size='small' onClick={this.handleNext} disabled={activeStep === maxSteps -1}>
+                        <Button  size='small' onClick={this.handleNext} disabled={activeStep === maxSteps - 1}>
                             Next 
-                            {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
                         </Button>
                     }
                     backButton={
-                        <Button disabled size='small' onClick={this.handleBack} disabled={activeStep === 0}>
-                            Next 
-                            {theme.direction === 'rtl' ?  <KeyboardArrowRight /> : <KeyboardArrowLeft /> }
+                        <Button  size='small' onClick={this.handleBack} disabled={activeStep === 0}>
+                            Back 
                         </Button>
                     }
                 />
+        </div>
 
-            </div>
         )
     }
 }//carsel
@@ -109,4 +107,4 @@ Carsel.propTypes = {
     theme: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles, { withThem: true})(Carsel);
+export default withStyles(styles, { withTheme: true})(Carsel);

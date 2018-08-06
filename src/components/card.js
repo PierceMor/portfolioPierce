@@ -44,7 +44,7 @@ function MediaCard(props) {
   const { classes } = props;
 
   return (
-    <Grid className={classes.root} spacing={12}>
+    <Grid className={classes.root}>
       <Card className={classes.card}>
 
       <Grid item xs={2}>
@@ -66,7 +66,7 @@ function MediaCard(props) {
                     </Typography>
                     
                     <Typography variant="subheading"     color="textSecondary">
-                        My name is Pierce Morrill, hailing from the Glorious land of the DFW to conquer this beautiful Ausstin country. My Academic career was focused primarily on Anthropology, Linguistics, and German Studies. After School I began to look for something more meaningful and I became a bit stranded just waiting tables for a while. I came to Austin last year to work as a translator for a gaming company. 
+                        My name is Pierce Morrill, hailing from the Glorious land of the DFW to conquer this beautiful Ausstin country. Languages have always fascinated me. I followed this fascination to Europe becoming fluent in German. Now this fascination is turning me towards Computer and learning all the nuances of being a Developer.
                     </Typography>
                 </CardContent>
             </div>
