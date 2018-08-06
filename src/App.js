@@ -5,9 +5,7 @@ import Footer from "./components/footer.js";
 import Home  from "./pages/home.js";
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
-// import Contact from "./pages/contact.js";
 import Projects from "./pages/projects.js";
-// import Funstuff from "./pages/funStuff.js";
 
 const theme = createMuiTheme();
 
@@ -20,9 +18,7 @@ class App extends Component {
             <div className="main">
               <Navbar />
               <Route exact path="/" component={Home} />
-              {/* <Route exact path="/contact" component={Contact} /> */}
               <Route exact path="/Projects" component={Projects} />
-              {/* <Route exact path="/funstuff" component={Funstuff} /> */}
             </div>
             <Footer />
           </div>

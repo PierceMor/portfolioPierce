@@ -18,7 +18,6 @@ const styles = () => ({
         margin: '2.6%',
         position: 'relative',
         padding: 25,
-        
     },
     card: {
         margin: 6,
@@ -71,13 +70,14 @@ function MediaCard(props) {
                 </CardContent>
             </div>
 
-           <Carsel />
+      <Carsel />
+           
         </Grid>
-
         <Grid item xs={2}>
         </Grid>
 
       </Card>
+
     </Grid>
   );
 }

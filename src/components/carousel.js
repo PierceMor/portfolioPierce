@@ -76,7 +76,6 @@ class Carsel extends React.Component {
         return (
 
         <div className= { classes.root }>
-            <Card>
                 <Paper square elevation={0} className={classes.header}>
                     <Typography> {testimonials[activeStep].text}  < br/> {testimonials[activeStep].author} </Typography>
                 </Paper>
@@ -97,7 +96,6 @@ class Carsel extends React.Component {
                         </Button>
                     }
                 />
-            </Card>
 
         </div>
 

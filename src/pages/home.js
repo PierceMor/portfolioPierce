@@ -11,7 +11,7 @@ render (){
     return (
         <div >
             <MediaCard />
-           <Carsel />
+            {/* <Carsel /> */}
 
             <SimpleCard />
         </div>
