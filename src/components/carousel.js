@@ -6,6 +6,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
 
 
 const testimonials= [
@@ -29,7 +30,7 @@ const testimonials= [
 
 const styles = theme => ({
     root: { 
-        maxWidth: 400,
+        maxWidth: '100%',
         flexgrow: 1,
     },
     header: {
@@ -75,7 +76,7 @@ class Carsel extends React.Component {
         return (
 
         <div className= { classes.root }>
-
+            <Card>
                 <Paper square elevation={0} className={classes.header}>
                     <Typography> {testimonials[activeStep].text}  < br/> {testimonials[activeStep].author} </Typography>
                 </Paper>
@@ -86,16 +87,18 @@ class Carsel extends React.Component {
                     activeStep={activeStep}
                     className={classes.MobileStepper}
                     nextButton={
-                        <Button  size='small' onClick={this.handleNext} disabled={activeStep === maxSteps - 1}>
+                        <Button  size='large' onClick={this.handleNext} disabled={activeStep === maxSteps - 1}>
                             Next 
                         </Button>
                     }
                     backButton={
-                        <Button  size='small' onClick={this.handleBack} disabled={activeStep === 0}>
+                        <Button  size='large' onClick={this.handleBack} disabled={activeStep === 0}>
                             Back 
                         </Button>
                     }
                 />
+            </Card>
+
         </div>
 
         )
