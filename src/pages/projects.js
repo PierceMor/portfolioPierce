@@ -12,6 +12,8 @@ import baby from '../img/baby.JPG';
 import animal from '../img/animal.JPG';
 import endGame from "../img/endGame.JPG";
 import woofle from "../img/woofle.JPG";
+import cartBuilder from "../img/cartBuilder.JPG";
+
 
 const styles = theme => ({
     root: {
@@ -31,6 +33,17 @@ const styles = theme => ({
 });
 
 const examples = [
+    {
+        img: cartBuilder,
+        language: [
+            'node',
+            'Javascript'
+        ],
+        title: 'DIY Cart Builder',
+        link: 'https://github.com/patientplatypus/cart_builder',
+        GitHub: 'https://github.com/patientplatypus/cart_builder',
+
+    },
     {
         img: animal,
         language: [

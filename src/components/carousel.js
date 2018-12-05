@@ -11,7 +11,7 @@ import Card from '@material-ui/core/Card';
 
 const testimonials= [
     {
-        text: `Pierce Morrill was my intern at the Dallas County Democratic Party. His patience and positive attitude made him an absolute pleasure to work with.  When it comes to work, there was no job too small or insignificant; he accomplished every goal diligently with a smile on his face. He took initiative on many projects and was a great team player. Pierce had no problem talking to voters and other activists that visited our office. He has an uncanny ability to build relationships and make others feel comfortable. His creativity and ability to think outside of the box really brought insight and efficiency to the way we did things. I would love to involve Pierce in any project or initiative I have in the future. `,
+        text: `Pierce Morrill  `,
         author: `-Chris Nguyen, `,
     },
     {
@@ -61,6 +61,7 @@ class Carsel extends React.Component {
 
 
     handleNext = () => {
+        console.log( 'HandleNext being called');
         this.setState(prevState => ({
             activeStep: prevState.activeStep + 1
         }));
@@ -68,6 +69,8 @@ class Carsel extends React.Component {
 
 
     handleBack = () => {
+        console.log( 'handleBack being called');
+
         this.setState(prevState => ({   
           activeStep: prevState.activeStep - 1,
         }));
@@ -78,7 +81,6 @@ class Carsel extends React.Component {
         const { activeStep } = this.state;
         const maxSteps = testimonials.length ;
         const theme = createMuiTheme();
-
         return (
 
         <div className= { classes.root }>
@@ -93,14 +95,14 @@ class Carsel extends React.Component {
                     steps={maxSteps}
                     position='static'
                     activeStep={activeStep}
-                    className={classes.MobileStepper}
+                    className={classes.mobileStepper}
                     nextButton={
-                        <Button  size='large' onClick={this.handleNext} disabled={activeStep === maxSteps - 1}>
+                        <Button  size='large' onClick={this.handleNext} >
                             Next 
                         </Button>
                     }
                     backButton={
-                        <Button  size='large' onClick={this.handleBack} disabled={activeStep === 0}>
+                        <Button  size='large' onClick={this.handleBack} >
                             Back 
                         </Button>
                     }
