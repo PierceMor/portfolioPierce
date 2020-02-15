@@ -13,7 +13,7 @@ const styles = {
         flexGrow: 1,
         position: 'relative',
         padding: 25,
-
+        overflow: 'auto',
     },
     card: {
         width: '28%',
@@ -23,6 +23,7 @@ const styles = {
         marginRight: '2.6%',
         marginLeft: '2.6%',
         height: 350,
+        overflow: 'auto',
     },
     h2: {
         underLine: 'solid'
@@ -38,6 +39,7 @@ const styles = {
     },
     pos: {
         marginBottom: 12,
+        overflow: 'auto',
     },
 };
 
@@ -56,8 +58,13 @@ function SimpleCard(props){
                         </Typography>
 
                         <Typography className={classes.pos}  >
-                            - Front-end Developer -
-                            <br /> I enjoy coding things from scratch, making Ideas jump and grab your attention 
+
+                            - Product Specialist -
+                            <br /> While with Facebook I was supporting multiple internal dev tools, this role combined my customer service skills and hard skills as a junior Developer. 
+                            <br /><br />
+
+                            - Frontend Developer -
+                            <br /> Being a Frontend Developer combines my love for technology and languages. 
                             <br /><br />
 
                             - German Translator -
@@ -82,17 +89,25 @@ function SimpleCard(props){
 
                         <Typography className={classes.title}  >
                            - Development -
-                            <br/>   I have just started my Journay as a Full Stack Developer
-                            <br/><br/>
+                            <br/>   
+                                I have just started my Journay as a Full Stack Developer
+                            <br/>
+                            <br/>
                             - Brazilian Jiu Jitsu -
-                            <br/>   I have been training for about 4 years nows
-                            <br/><br/>
+                            <br/>   
+                                I have been training since 2014. 
+                            <br/>
+                            <br/>
                             - Video Games -
-                            <br/>   Gaming has always been a part of my life, ever since playing Starcraft as a Kid
-                            <br/><br/>
+                            <br/>   
+                                Gaming has always been a part of my life, ever since playing Starcraft as a Kid
+                            <br/>
+                            <br/>
                             - Linguistics -
-                            <br/>   Languages have always fascinated me with how they define our way of thinking 
-                            <br/><br/>
+                            <br/>   
+                                Languages have always fascinated me with how they define our way of thinking 
+                            <br/>
+                            <br/>
                         </Typography>
 
                     </CardContent>

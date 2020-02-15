@@ -5,8 +5,8 @@ import MobileStepper from '@material-ui/core/MobileStepper';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
+// import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+// import Card from '@material-ui/core/Card';
 
 
 const testimonials= [
@@ -31,22 +31,29 @@ const testimonials= [
 const styles = theme => ({
     root: { 
         maxWidth: '100%',
-        flexgrow: 1,
+        maxHeight: '100%',
+        position: 'static',
+        width: '100%,'
     },
-    header: {
+        header: {
         display: 'flex',
         alignItems: 'center',
-        height: 50,
+        overflow: 'auto',
+            height: 60,
+        maxHeight: '100%',
         paddingLeft: theme.spacing.unit * 4,
         marginBottom: 20,
         backgroundColor: theme.palette.background.default,
-      },
-      img: {
+    },
+    img: {
         height: 300,
         maxWidth: 400,
         overflow: 'hidden',
         width: '100%',
-      },
+    },
+    MobileStepper: {
+        position: 'static'
+    },
 });
 
 class Carsel extends React.Component {
@@ -82,7 +89,7 @@ class Carsel extends React.Component {
 
                 <MobileStepper
                     steps={maxSteps}
-                    position='static'
+                    
                     activeStep={activeStep}
                     className={classes.MobileStepper}
                     nextButton={

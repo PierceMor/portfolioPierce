@@ -7,6 +7,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 import Projects from "./pages/projects.js";
 
+
 const theme = createMuiTheme();
 
 class App extends Component {

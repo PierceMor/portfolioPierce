@@ -17,7 +17,7 @@ const styles = () => ({
         flexGrow: 1,
         margin: '2.6%',
         position: 'relative',
-        padding: 25,
+        padding: '2%',
     },
     card: {
         margin: 6,
@@ -43,6 +43,7 @@ function MediaCard(props) {
   const { classes } = props;
 
   return (
+      
     <Grid className={classes.root}>
       <Card className={classes.card}>
 
@@ -65,7 +66,7 @@ function MediaCard(props) {
                     </Typography>
                     
                     <Typography variant="subheading"     color="textSecondary">
-                        My name is Pierce Morrill, hailing from the Glorious land of the DFW to conquer this beautiful Ausstin country. Languages have always fascinated me. I followed this fascination to Europe becoming fluent in German. Now this fascination is turning me towards Computer and learning all the nuances of being a Developer.
+                        My previous role was contracting with Facebook. While there I was a Product Specialist, this role allowed me to utilize my hard technical skills and my soft skills. Being able to help multiple people with their issues was a great part of my day. 
                     </Typography>
                 </CardContent>
             </div>

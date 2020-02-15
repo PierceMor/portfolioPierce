@@ -11,7 +11,7 @@ render (){
             <SimpleCard />
         </div>
     )
-}//renderdd
+}//render
 } //Home
 
 export default Project;

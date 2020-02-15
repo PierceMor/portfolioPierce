@@ -17,9 +17,11 @@ const styles ={
         position: 'sticky',
         width: '100%',
         bottom: 0,
+        height: 20,
     },  
     button : {
         width: '100%',
+        height: 25,
         backGroundColor: 'blue',
     },
     list : {
@@ -70,7 +72,9 @@ class Footer extends React.Component {
         return (
             <div className={classes.root} >
 
-                <Button className={classes.button} onClick={this.toggleDrawer('bottom',true)}>Message Me Cat Pictures!</Button>
+                <Button className={classes.button} onClick={this.toggleDrawer('bottom',true)}>
+                    Let's Chat
+                </Button>
 
                 <Drawer anchor='bottom' className={classes.Drawer} open={this.state.bottom} onClose={this.toggleDrawer('bottom',false)}>
                     <div

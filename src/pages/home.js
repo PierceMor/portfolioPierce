@@ -10,13 +10,14 @@ render (){
 
     return (
         <div >
+            
             <MediaCard />
             {/* <Carsel /> */}
 
             <SimpleCard />
         </div>
     )   
-}//renderdd
+}//render
 } //Home
 
 export default Home;
