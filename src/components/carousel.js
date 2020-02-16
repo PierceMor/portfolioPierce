@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 // import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 // import Card from '@material-ui/core/Card';
 
+import '../css/scrollbar.css';
 
 const testimonials= [
     {
@@ -83,7 +84,7 @@ class Carsel extends React.Component {
         return (
 
         <div className= { classes.root }>
-                <Paper square elevation={0} className={classes.header}>
+                <Paper square elevation={0} className={classes.header} id="scrollbar">
                     <Typography> {testimonials[activeStep].text}  < br/> {testimonials[activeStep].author} </Typography>
                 </Paper>
 

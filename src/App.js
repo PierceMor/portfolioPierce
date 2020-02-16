@@ -7,16 +7,17 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 import Projects from "./pages/projects.js";
 
+import './css/scrollbar.css';
 
 const theme = createMuiTheme();
 
 class App extends Component {
   render(){
     return( 
-      <MuiThemeProvider theme={theme}>
+      <MuiThemeProvider theme={theme} >
         <Router>
           <div>
-            <div className="main">
+            <div className="main" >
               <Navbar />
               <Route exact path="/" component={Home} />
               <Route exact path="/Projects" component={Projects} />

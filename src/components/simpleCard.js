@@ -6,6 +6,8 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
+import '../css/scrollbar.css';
+
 
 const styles = {
     root: {
@@ -37,27 +39,24 @@ const styles = {
         marginBottom: 16,
         fontSize: 14,
     },
-    pos: {
-        marginBottom: 12,
-        overflow: 'auto',
-    },
+
 };
 
 function SimpleCard(props){
     const { classes } = props;
 
     return (
-        <div>
-            <Grid className={classes.root}>
+        <div id="style1">
+            <Grid className={classes.root} >
 
-                <Card className={classes.card}>
-                    <CardContent>
+                <Card className={classes.card} id="scrollbar">
+                    <CardContent >
 
                         <Typography variant='headline' component='h2' >
                             Services
                         </Typography>
 
-                        <Typography className={classes.pos}  >
+                        <Typography   >
 
                             - Product Specialist -
                             <br /> While with Facebook I was supporting multiple internal dev tools, this role combined my customer service skills and hard skills as a junior Developer. 
@@ -79,7 +78,7 @@ function SimpleCard(props){
                 </Card> 
 
 
-                <Card className={classes.card}>
+                <Card className={classes.card} id="scrollbar">
                     <CardContent>
 
                         <Typography variant='headline' component='h2' >
@@ -114,7 +113,7 @@ function SimpleCard(props){
                 </Card> 
 
 
-                <Card className={classes.card}>
+                <Card className={classes.card} id="scrollbar">
                     <CardContent>
 
                         <Typography variant='headline' component='h2' >
