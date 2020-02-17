@@ -13,6 +13,9 @@ import animal from '../img/animal.JPG';
 import endGame from "../img/endGame.JPG";
 import woofle from "../img/woofle.JPG";
 
+import '../css/scrollbar.css';
+
+
 const styles = theme => ({
     root: {
         display: 'flex',
@@ -94,7 +97,7 @@ function Projects(props){
     const { classes } = props;
 
     return (
-        <div className={classes.root}>
+        <div className={classes.root} >
             <GridList cellHeight={180} className={classes.gridList}>
                 <GridListTile key='subheader' cols={2} style = {{ height: 'auto'}}>
                 </GridListTile>

@@ -8,7 +8,6 @@ import Button from '@material-ui/core/Button';
 // import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 // import Card from '@material-ui/core/Card';
 
-import '../css/scrollbar.css';
 
 const testimonials= [
     {
@@ -16,16 +15,16 @@ const testimonials= [
         author: `-Scout the Dog`,
     },
     {
-        text: `He is just the Best ever. `,
-        author: `-Mom`,
-    },
-    {
         text: `Pierce Morrill was my intern at the Dallas County Democratic Party. His patience and positive attitude made him an absolute pleasure to work with.  When it comes to work, there was no job too small or insignificant; he accomplished every goal diligently with a smile on his face. He took initiative on many projects and was a great team player. Pierce had no problem talking to voters and other activists that visited our office. He has an uncanny ability to build relationships and make others feel comfortable. His creativity and ability to think outside of the box really brought insight and efficiency to the way we did things. I would love to involve Pierce in any project or initiative I have in the future. `,
         author: `-Chris Nguyen, `,
-    },{
+    },
+    {
         text: `You can teach specific skills for a job, but you can't teach some one to be personable and enjoyable to work with. Pierce is intuitively good at interpersonal communication. While traits like enthusiasm and positivity can come off as hokey or irritating, Pierce's combination of authenticity and exceptional social skills render them delightful and motivating. Also, he codes good.`,
         author: `-Jen Pennington, `,
-
+    },
+    {
+        text: `He is just the Best ever. `,
+        author: `-Mom`,
     },
 ];
 
@@ -36,11 +35,11 @@ const styles = theme => ({
         position: 'static',
         width: '100%,'
     },
-        header: {
+    header: {
         display: 'flex',
         alignItems: 'center',
         overflow: 'auto',
-            height: 60,
+        height: 60,
         maxHeight: '100%',
         paddingLeft: theme.spacing.unit * 4,
         marginBottom: 20,

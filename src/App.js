@@ -14,12 +14,12 @@ const theme = createMuiTheme();
 class App extends Component {
   render(){
     return( 
-      <MuiThemeProvider theme={theme} >
+      <MuiThemeProvider theme={theme} id='scrollbar' >
         <Router>
-          <div>
+          <div  >
             <div className="main" >
               <Navbar />
-              <Route exact path="/" component={Home} />
+              <Route exact path="/" component={Home}  />
               <Route exact path="/Projects" component={Projects} />
             </div>
             <Footer />
